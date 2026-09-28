@@ -1,0 +1,22 @@
+{
+  "name": "@gtm-ops/salesforce-tools",
+  "version": "1.0.0",
+  "description": "Salesforce operator: MCP tools for reports, campaigns, ownership, and territories, with verify-after-write auditing and preview-then-apply commit actions.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "node --test dist/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@gtm-ops/shared": "*",
+    "@modelcontextprotocol/server": "^2.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@gtm-ops/hubspot-tools",
+  "version": "1.0.0",
+  "description": "HubSpot operator: MCP tools for workflows, lists, and CRM records, with verify-after-write auditing and preview-then-apply commit actions.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "dev": "tsc -p tsconfig.json && node dist/server.js",
+    "test": "node --test dist/"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "hubspot",
+    "ai-agent",
+    "gtm-ops"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@cfworker/json-schema": "^4.1.1",
+    "@modelcontextprotocol/server": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "zod": "^4.1.12",
+    "@gtm-ops/shared": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "typescript": "^5.8.3"
+  }
+}

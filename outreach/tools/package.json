@@ -1,0 +1,22 @@
+{
+  "name": "@gtm-ops/outreach-tools",
+  "version": "1.0.0",
+  "description": "Outreach operator: MCP tools for prospects and sequences, with verify-after-write auditing and preview-then-apply commit actions.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "node --test dist/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@gtm-ops/shared": "*",
+    "@modelcontextprotocol/server": "^2.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "typescript": "^5.8.3"
+  }
+}

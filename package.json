@@ -1,0 +1,17 @@
+{
+  "name": "gtm-ops-agents",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI operators for HubSpot, Salesforce, and Outreach, with approval gates and verify-after-write auditing.",
+  "workspaces": [
+    "shared/tools",
+    "hubspot/tools",
+    "salesforce/tools",
+    "outreach/tools"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run build && npm test --workspaces --if-present"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Saved login tokens (Outreach rotates these; never commit them)
+.outreach-token.json
+*.token.json
+
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Logs / OS cruft
+npm-debug.log*
+.DS_Store

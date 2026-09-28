@@ -1,0 +1,23 @@
+{
+  "name": "@gtm-ops/shared",
+  "version": "1.0.0",
+  "description": "Shared building blocks for the GTM operators: the tool envelope, env loading, and the preview-then-apply commit gate.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "typescript": "^5.8.3"
+  }
+}
