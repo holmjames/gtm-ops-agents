@@ -1,5 +1,7 @@
 # GTM Ops Agents
 
+[![tests](https://github.com/holmjames/gtm-ops-agents/actions/workflows/tests.yml/badge.svg)](https://github.com/holmjames/gtm-ops-agents/actions/workflows/tests.yml)
+
 **AI operators that build and run HubSpot, Salesforce, and Outreach work for a revenue team, fast enough to replace hours of hand-building and safe enough to trust with live customer data.**
 
 ---

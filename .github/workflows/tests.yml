@@ -1,0 +1,19 @@
+name: tests
+on:
+  push:
+  pull_request:
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - name: no secrets in the repo
+        run: |
+          ! grep -rIE --exclude-dir=.git --exclude-dir=.github --exclude-dir=node_modules --exclude-dir=dist "(gtms_[A-Za-z0-9_-]{16,}|ms_[A-Za-z0-9]{16,}|sk-[A-Za-z0-9]{20,}|xoxb-[0-9A-Za-z-]{20,})" .
