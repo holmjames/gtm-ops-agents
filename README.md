@@ -30,12 +30,6 @@ The work is too repetitive to do by hand and too risky to hand to automation tha
 - **Runs live operations behind a preview.** Turns workflows on, enrolls prospects, reassigns owners and territories, and deletes records, but only after showing exactly what will happen and getting an explicit yes.
 - **Proves every change.** Reads the system back after every write, and reports `verified: true` only when the change is actually there.
 
-## Demo
-
-> 📹 **[DEMO PLACEHOLDER: add GIF or video here]**
->
-> Suggested 60–90 second cut: a ticket comes in → the agent's triage → the plan and first approval → the build report showing everything OFF → a round-robin preview ("40 accounts, 4 reps") → the approval → `verified: true`.
-
 ## How it works
 
 The system is split into three layers, so each can change without breaking the others. [Full architecture and diagram →](docs/architecture.md)
@@ -74,8 +68,6 @@ What makes the Commit gate hold:
 - **$385K per year** in operating spend saved
 - **~30 hours per week** of hands-on build work saved
 - **0 accidental sends or activations, and 0 near misses**, over 8 months in production
-- **[N workflows, sequences, and campaigns built]**
-- **[Optional: a one-line quote from a stakeholder who used it]**
 
 ## What I'd build next
 
@@ -88,7 +80,7 @@ What makes the Commit gate hold:
 
 ## Setup
 
-**You don't need any accounts to see it work.** The test suite runs against fake versions of each platform:
+**You don't need any accounts to see it work.** The test suite (46 tests) runs against fake versions of each platform:
 
 ```bash
 # Requires Node.js 20 or newer
